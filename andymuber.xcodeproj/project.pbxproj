@@ -12,6 +12,10 @@
 		D445AB3A1CB73EAA00C7538D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D445AB381CB73EAA00C7538D /* Main.storyboard */; };
 		D445AB3C1CB73EAA00C7538D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D445AB3B1CB73EAA00C7538D /* Assets.xcassets */; };
 		D445AB3F1CB73EAA00C7538D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D445AB3D1CB73EAA00C7538D /* LaunchScreen.storyboard */; };
+		D445AB4B1CB73EF400C7538D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445AB471CB73EF400C7538D /* Bolts.framework */; };
+		D445AB4C1CB73EF400C7538D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445AB481CB73EF400C7538D /* Parse.framework */; };
+		D445AB4D1CB73EF400C7538D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445AB491CB73EF400C7538D /* ParseFacebookUtilsV4.framework */; };
+		D445AB4E1CB73EF400C7538D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D445AB4A1CB73EF400C7538D /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		D445AB3B1CB73EAA00C7538D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D445AB3E1CB73EAA00C7538D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D445AB401CB73EAA00C7538D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D445AB471CB73EF400C7538D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D445AB481CB73EF400C7538D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D445AB491CB73EF400C7538D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		D445AB4A1CB73EF400C7538D /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D445AB4C1CB73EF400C7538D /* Parse.framework in Frameworks */,
+				D445AB4B1CB73EF400C7538D /* Bolts.framework in Frameworks */,
+				D445AB4E1CB73EF400C7538D /* ParseUI.framework in Frameworks */,
+				D445AB4D1CB73EF400C7538D /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +72,20 @@
 				D445AB3B1CB73EAA00C7538D /* Assets.xcassets */,
 				D445AB3D1CB73EAA00C7538D /* LaunchScreen.storyboard */,
 				D445AB401CB73EAA00C7538D /* Info.plist */,
+				D445AB461CB73EDE00C7538D /* Frameworks */,
 			);
 			path = andymuber;
+			sourceTree = "<group>";
+		};
+		D445AB461CB73EDE00C7538D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D445AB471CB73EF400C7538D /* Bolts.framework */,
+				D445AB481CB73EF400C7538D /* Parse.framework */,
+				D445AB491CB73EF400C7538D /* ParseFacebookUtilsV4.framework */,
+				D445AB4A1CB73EF400C7538D /* ParseUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/andymuber",
+				);
 				INFOPLIST_FILE = andymuber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmorrison.andymuber;
@@ -262,6 +290,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/andymuber",
+				);
 				INFOPLIST_FILE = andymuber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmorrison.andymuber;
